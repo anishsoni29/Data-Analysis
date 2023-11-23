@@ -34,7 +34,6 @@ body {
   height: 380px;
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
@@ -87,7 +86,6 @@ body {
   animation: pulsate 2s infinite;
 }
 
-
 @keyframes pulsate {
   0% {
     transform: scale(1);
@@ -124,7 +122,6 @@ footer {
   color: rgb(240, 240, 240);
 }
 
-
 ul {
   margin-top: 20px;
   padding: 0;
@@ -141,10 +138,10 @@ ul {
   color: #0a66c2;
 }
 
-.socials{
+.socials {
   opacity: 0.5;
 }
-.socials a{
+.socials a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,7 +149,6 @@ ul {
 }
 
 ul a {
-  
   display: flex;
   font-size: 0.85rem;
   margin-top: 10px;
@@ -238,29 +234,38 @@ ul a {
 /* DEMO-SPECIFIC STYLES */
 
 .typewriter h1 {
-    color: bisque;
-    display: flex;
-    padding-top: 40px;
-    justify-content: center;
-    font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typewriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 2% auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation:
-      typing 3.5s steps(30, end) infinite, /* Infinite typing animation */
-      blink-caret .5s step-end infinite;
+  color: bisque;
+  display: flex;
+  padding-top: 40px;
+  justify-content: center;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 2% auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end) infinite,
+    /* Infinite typing animation */ blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-    0%, 100% { width: 0 } /* Start and end with width: 0 */
-    50% { width: 100% } /* Reach full width in the middle */
+  0%,
+  100% {
+    width: 0;
+  } /* Start and end with width: 0 */
+  50% {
+    width: 100%;
+  } /* Reach full width in the middle */
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
