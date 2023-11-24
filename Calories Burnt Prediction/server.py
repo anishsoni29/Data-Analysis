@@ -7,7 +7,7 @@ from  sklearn.linear_model import LinearRegression
 app = Flask(__name__) 
 
 @app.route('/') 
-def index(): 
+def index():
   return render_template('index.html') 
 
 @app.route('/cp', methods = ['POST'] ) 
